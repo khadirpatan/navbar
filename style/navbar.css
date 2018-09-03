@@ -1,0 +1,165 @@
+:root{
+	font-size: 16px;
+}
+.navbar{
+display: flex;
+flex-direction: row;
+  background-color: #333;
+  margin:4vh 1vw;
+}
+#tabs{
+	display: flex;
+	flex-direction: row;
+}
+.tabs1{
+	display: flex;
+	flex-direction: column;
+}
+.tabs2{
+	display: flex;
+	flex-direction:row;
+}
+.disply{
+	display:block;
+	}
+
+#home, #tab1, #tab2,#tab3 {
+	text-align:center;
+	padding:10px 30px;
+	
+}
+
+#dropdown{
+
+	background-color:transparent;
+	border:none;
+	color:white;
+	width:100%;
+	height:100%;
+	margin:0;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-decoration :none;
+}
+
+#dropdown:hover, #dropdown:focus {
+    cursor: pointer;
+}
+
+#dropdownContent {
+  	display:none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:9px;
+}
+
+
+#dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+#dropdownContent a:hover {
+    background-color:lightgray ;
+}
+
+
+
+
+
+#home a, #tab1 a, #tab2 a{
+	color:white;
+}
+#tab1:hover, #tab2:hover,#tab3:hover {
+    background-color: green;
+}
+.navbar #home, #home a{
+	background-color: green;
+	color:white;
+}
+
+#search{
+padding:10px;}
+.searchLeft{
+	padding:10px;
+	margin-left:auto; 
+
+}
+
+input[type=text],select{
+	outline:none;
+}
+
+#toggler{
+	padding:10px 20px;
+	display: none;	
+}
+
+.navbar a  {
+
+	color: black;
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-decoration :none;
+}
+
+
+
+
+
+@media only screen and (max-width:745px) and (min-width:450px) {
+	:root{
+	font-size: 14px;
+}
+
+#toggler{
+	padding:10px 20px;
+	display:block;
+	position: absolute;
+	right:30px;	
+	cursor: pointer;
+}
+#tabs , #search{
+	display:none;
+	
+}
+
+#home, #tab1, #tab2,#tab3 {
+	text-align:center;
+	padding:10px;
+
+	width:20vw;
+	
+}
+}	
+
+
+@media only screen and (min-width: 250px) and (max-width:450px){
+	:root{
+	font-size: 14px;
+}
+
+#toggler{
+	padding:10px 20px;
+	display:block;
+	position: absolute;
+	right:30px;	
+	cursor: pointer;
+}
+#tabs , #search{
+	display:none;
+	
+}
+#home, #tab1, #tab2,#tab3 {
+	text-align:center;
+	padding:10px;
+
+	width:40vw;
+	
+}
+}	
